@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let isEighteen = confirm("Есть ли вам 18 лет?");
+
+        if (isEighteen) {
+            wakeUpTime = prompt("Во сколько вы встаете?");
+        } else {alert ("Вам запрещено проходить опрос");}
+
+        if (isNaN(wakeUpTime)) {
+            alert("некорректный ввод");
+        } 
+        
+        if (wakeUpTime > 0 && wakeUpTime <= 5) {
+            alert("Очень рано");
+        } else if (wakeUpTime > 5 && wakeUpTime <= 8) {
+            alert("Всё равно рано");
+        } else if (wakeUpTime > 8 && wakeUpTime <= 11) {
+            alert("Нормально");
+        } else if (wakeUpTime > 11 && wakeUpTime <= 14) {
+            alert("Слишком поздно");
+        } else if (wakeUpTime > 14 && wakeUpTime <= 24) {
+            alert("Очень-очень поздно");
+        } else if (wakeUpTime < 0 || wakeUpTime > 24) {
+            alert("Научись пользоваться часами!");
+        }
+
+    
+
+    </script>
+    
+</body>
+</html>
